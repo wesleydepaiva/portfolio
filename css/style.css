@@ -98,6 +98,15 @@ nav a {
     justify-content: center;
 
     margin-bottom: 2rem;
+
+    transition: background-color 0.3s ease;
+}
+
+.videoprincipal a:hover {
+    color: var(--laranja);
+    background-color: var(--branco);
+
+    trans
 }
 
 
@@ -114,6 +123,9 @@ nav a {
 .sobremim img {
     width: 90%;
     max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sobremim__textos {
@@ -135,6 +147,12 @@ nav a {
     font-size: 1.2rem;
     padding-top: 0.5rem;
     line-height: 1.5;
+}
+
+.coluna__esquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -274,6 +292,8 @@ nav a {
     color: var(--azul);
     font-size: 2rem;
     font-weight: bolder;
+    text-align: center;
+    
 }
 
 .projetos__container {
@@ -309,7 +329,8 @@ nav a {
 
 .projeto__item p {
     text-align: center;
-    margin-bottom: 0.5rem
+    margin-bottom: 1rem;
+    max-width: 400px;
 }
 
 .projeto__item a {
@@ -325,11 +346,24 @@ nav a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);;
 
     margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
 }
+
+.projeto__item a:hover {
+    color: var(--laranja);
+    background-color: var(--branco);
+
+}
+
+
 
 
 .projeto__item__linguagens img{
     width: 25px;
+    
+}
+
+.projeto__item a{
     
 }
 
@@ -344,6 +378,7 @@ nav a {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 0.5rem;
+    text-align: center;
     
 }
 
@@ -391,6 +426,7 @@ nav a {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .feedbacks__container {
@@ -460,6 +496,8 @@ nav a {
     align-items: center;
 
     margin: 0rem 1rem;
+
+    padding: 10px;
 }
 
 .midia__social img {
@@ -537,6 +575,26 @@ nav a {
         padding-right: 3rem;
     }
 
+    .projeto__item h3 {
+        font-size: 2rem;
+    }
+
+    .projeto__item p {
+
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        max-width: 400px;
+    }
+
+    .projeto__item a {
+        font-size: 1.5rem;
+    }
+
+    .projeto__item__linguagens img{
+        width: 40px;
+        
+    }
+
     .resultados__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -548,4 +606,8 @@ nav a {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
+  }
+
+  @media screen and (min-width: 992px) {
+    .resultados__container { grid-template-columns: 1fr 1fr 1fr;}
   }
