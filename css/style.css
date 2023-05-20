@@ -284,6 +284,10 @@ nav a {
 .projetos {
     background-color: var(--branco);
     padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .projetos h2 {
@@ -297,6 +301,7 @@ nav a {
 .projetos__container {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1300px;
 }
 
 .projeto__item {
