@@ -99,7 +99,7 @@ nav a {
 
     margin-bottom: 2rem;
 
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .videoprincipal a:hover {
@@ -127,7 +127,7 @@ nav a {
 }
 
 .sobremim__textos {
-    max-width: 600px;
+    max-width: 500px;
     padding:  0.5rem;
 }
 
@@ -207,6 +207,7 @@ nav a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .formacao__bloco__textos {
@@ -218,6 +219,7 @@ nav a {
 
 .formacao__bloco__textos__descricao {
     font-size: 0.8rem;
+    max-width: 300px;
 }
 
 .formacao__bloco__textos h3 {
@@ -230,6 +232,7 @@ nav a {
     font-weight: 900;
     font-size: 1.5rem;
     color: var(--azul);
+    max-width: 300px;
 }
 
 .formacao__bloco__textos p {
@@ -274,6 +277,11 @@ nav a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.idiomas__imagem_item img:hover {
+    width: 8rem;
+    transition: all 0.7s ease;
 }
 
 
@@ -363,10 +371,6 @@ nav a {
 
 .projeto__item__linguagens img{
     width: 25px;
-    
-}
-
-.projeto__item a{
     
 }
 
@@ -479,6 +483,7 @@ nav a {
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .midiassociais__container {
@@ -505,8 +510,44 @@ nav a {
 
 .midia__social img {
     width: 80px;
+
     
 }
+
+
+.midiassociais__container__grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+} 
+
+.midia__social__grande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.8rem 1rem ;
+    width: 33%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background: var(--branco);
+    border-radius: 17px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.midia__social__grande img {
+    max-height: 70px;
+    
+}
+
+.midiassociais__container__grande a:hover {
+    background-color: var(--laranja);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+
 
 .footer {
     display: flex;
@@ -543,6 +584,10 @@ nav a {
 
 @media screen and (max-width: 768px) {
     .video__grande {
+        display: none;
+    }
+
+    .midiassociais__container__grande {
         display: none;
     }
 }
@@ -608,6 +653,10 @@ nav a {
     .resultado__item {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+    }
+
+    .midiassociais__container {
+        display: none;
     }
   }
 
