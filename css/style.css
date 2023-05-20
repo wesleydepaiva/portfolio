@@ -467,6 +467,13 @@ nav a {
 
 }
 
+.feedback__container__grande {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
@@ -590,7 +597,11 @@ nav a {
     .midiassociais__container__grande {
         display: none;
     }
+
+    
 }
+
+
 
 @media screen and (min-width: 768px) {
     .video__pequeno {
@@ -605,6 +616,11 @@ nav a {
     }
 
     .feedback__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feedback__container__grande {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -660,6 +676,21 @@ nav a {
     }
   }
 
+  @media screen and (max-width: 992px) {
+    .feedback__container__grande {
+        display: none;
+    }
+  }
+
+
   @media screen and (min-width: 992px) {
-    .resultados__container { grid-template-columns: 1fr 1fr 1fr;}
+    .resultados__container { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .feedback__container {
+        display: none;
+    }
+
+
   }
